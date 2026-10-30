@@ -1,0 +1,5 @@
+# Explicit path budget: generated dependencies at every depth, Vite cache,
+# and disposable validation files only. Source, public assets and dist stay tracked.
+**/node_modules/
+**/.vite/
+test/scratch/

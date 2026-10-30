@@ -1,0 +1,31 @@
+{
+  "name": "squeek-peek",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --import tsx --test test/*.test.ts",
+    "check:live": "node --import tsx scripts/check-live.ts",
+    "test:browser": "node --import tsx test/browser.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/nunito-sans": "5.3.0",
+    "ethers": "6.17.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "axe-core": "4.14.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}
